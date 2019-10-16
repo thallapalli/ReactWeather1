@@ -8,7 +8,9 @@ class App extends Component {
       <div className="App">
        <h1>My React Complete Guide</h1>
        <p>Add new para. It must Surround with 1 div element</p>
-       <Person/>
+       <Person name="YYYY" age="32"/>
+       <Person name="GGGG" age="32">Cricketer</Person>
+       <Person name="UUUU" age="34">retired Cricketer</Person>
       </div>
     );
   }
