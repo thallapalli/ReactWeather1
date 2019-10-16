@@ -13,7 +13,18 @@ state = {
 
 changeNameHandler = () => {
  console.log('button Clicked');
+ //Cannot Mutate value. DO NOT use this --> this.state.persons[].name = 'HUHU';
+ this.setState({
+  persons: [
+    {name:'BBBB', age:32},
+    {name:'GGGG', age:35},
+    {name:'HHHH', age:38}
+  ]
+}
 
+
+
+ )
 }
 
 
