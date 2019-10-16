@@ -3,14 +3,24 @@ import './App.css';
 import Person from './Person/Person.js';
 
 class App extends Component {
+state = {
+  persons: [
+    {name:'YYYY', age:32},
+    {name:'GGGG', age:35},
+    {name:'HHHH', age:37}
+  ]
+}
+
+
   render() {
     return (
       <div className="App">
        <h1>My React Complete Guide</h1>
-       <p>Add new para. It must Surround with 1 div element</p>
-       <Person name="YYYY" age="32"/>
-       <Person name="GGGG" age="32">Cricketer</Person>
-       <Person name="UUUU" age="34">retired Cricketer</Person>
+       <p>Building new is App is FUN</p>
+       <button>Change Name</button>
+       <Person name={this.state.persons[0].name} age={this.state.persons[0].age}/>
+       <Person name={this.state.persons[1].name} age={this.state.persons[1].age}>Cricketer</Person>
+       <Person name={this.state.persons[2].name} age={this.state.persons[2].age}>retired Cricketer</Person>
       </div>
     );
   }
