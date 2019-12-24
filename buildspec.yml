@@ -27,6 +27,7 @@ phases:
 artifacts:
   files:
     - src/*
+    - src/Person/*
     - src/service/*
     - public/index.html
     - package.json
