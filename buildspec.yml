@@ -12,7 +12,7 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - npm install npm@latest -g
-      - npm install node@latest -g
+      - npm install node
       - npm install unit.js
   build:
     commands:
